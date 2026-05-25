@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contacto — Octavio Franco, Full Stack Java Developer." />
+  <title>Contacto · Octavio Franco</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/contact.css" />
+</head>
+<body data-page="contact">
+
+  <div id="navbar-container"></div>
+
+  <main>
+    <!-- Page header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="section-title" data-i18n="contact.title">Contacto</h1>
+        <p class="section-subtitle" data-i18n="contact.subtitle">Estoy abierto a oportunidades como Junior Java Developer. Hablemos.</p>
+      </div>
+    </section>
+
+    <!-- Contact main -->
+    <section class="section contact-main">
+      <div class="container">
+        <div class="row g-4">
+
+          <!-- Info column -->
+          <div class="col-lg-5 reveal">
+            <div class="contact-card">
+              <h2 class="block-title" data-i18n="contact.info.title">Información de contacto</h2>
+              <ul class="contact-list">
+                <li>
+                  <div class="contact-ico"><i class="fa-solid fa-envelope"></i></div>
+                  <div>
+                    <div class="contact-label" data-i18n="contact.info.emailLabel">Correo</div>
+                    <a href="mailto:octaviofranco.dev@gmail.com">octaviofranco.dev@gmail.com</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="contact-ico"><i class="fa-solid fa-phone"></i></div>
+                  <div>
+                    <div class="contact-label" data-i18n="contact.info.phoneLabel">Teléfono</div>
+                    <a href="tel:+573058506529">+57 305 850 6529</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="contact-ico"><i class="fa-solid fa-location-dot"></i></div>
+                  <div>
+                    <div class="contact-label" data-i18n="contact.info.locationLabel">Ubicación</div>
+                    <span data-i18n="contact.info.location">Cali, Colombia</span>
+                  </div>
+                </li>
+              </ul>
+
+              <h3 class="contact-subtitle" data-i18n="contact.social.title">Redes profesionales</h3>
+              <div class="contact-socials">
+                <a href="https://github.com/0ctapod" target="_blank" rel="noopener" class="contact-social github">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/octavio-franco-6341483b8/" target="_blank" rel="noopener" class="contact-social linkedin">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://cert.efset.org/EGze3u" target="_blank" rel="noopener" class="contact-social efset">
+                  <i class="fa-solid fa-language"></i>
+                  <span>EF SET C2</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form column -->
+          <div class="col-lg-7 reveal">
+            <div class="contact-card">
+              <h2 class="block-title" data-i18n="contact.form.title">Envíame un mensaje</h2>
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="name" class="form-label" data-i18n="contact.form.name">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="name" required
+                           data-i18n-placeholder="contact.form.namePh" placeholder="Tu nombre completo" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label" data-i18n="contact.form.email">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" name="email" required
+                           data-i18n-placeholder="contact.form.emailPh" placeholder="tu@email.com" />
+                  </div>
+                  <div class="col-12">
+                    <label for="subject" class="form-label" data-i18n="contact.form.subject">Asunto</label>
+                    <input type="text" class="form-control" id="subject" name="subject" required
+                           data-i18n-placeholder="contact.form.subjectPh" placeholder="¿De qué quieres hablar?" />
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label" data-i18n="contact.form.message">Mensaje</label>
+                    <textarea class="form-control" id="message" name="message" rows="6" required
+                              data-i18n-placeholder="contact.form.messagePh" placeholder="Cuéntame tu propuesta o pregunta..."></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn-primary-custom">
+                      <i class="fa-solid fa-paper-plane"></i>
+                      <span data-i18n="contact.form.send">Enviar mensaje</span>
+                    </button>
+                    <div id="formFeedback" class="form-feedback" hidden></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Lightweight mailto-based form handler (no backend required for GitHub Pages)
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('contactForm');
+      const feedback = document.getElementById('formFeedback');
+      if (!form) return;
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+          form.classList.add('was-validated');
+          return;
+        }
+        const name    = encodeURIComponent(form.name.value.trim());
+        const email   = encodeURIComponent(form.email.value.trim());
+        const subject = encodeURIComponent(form.subject.value.trim());
+        const message = encodeURIComponent(form.message.value.trim());
+        const body = `Nombre: ${decodeURIComponent(name)}%0D%0AEmail: ${decodeURIComponent(email)}%0D%0A%0D%0A${decodeURIComponent(message)}`;
+        window.location.href = `mailto:octaviofranco.dev@gmail.com?subject=${subject}&body=${body}`;
+
+        const lang = localStorage.getItem('octapod_lang') || 'es';
+        const dict = (window.translations && window.translations[lang]) || {};
+        feedback.textContent = dict['contact.form.success'] || 'Message ready!';
+        feedback.hidden = false;
+        form.reset();
+        form.classList.remove('was-validated');
+      });
+    });
+  </script>
+</body>
+</html>

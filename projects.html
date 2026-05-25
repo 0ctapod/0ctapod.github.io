@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de proyectos de Octavio Franco — ANDROVIX-J y AerolineaAPI." />
+  <title>Proyectos · Octavio Franco</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/projects.css" />
+</head>
+<body data-page="projects">
+
+  <div id="navbar-container"></div>
+
+  <main>
+    <!-- Page header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="section-title" data-i18n="projects.title">Portafolio de Proyectos</h1>
+        <p class="section-subtitle" data-i18n="projects.subtitle">Selección de proyectos desarrollados durante mi formación Full Stack Java en Generation Colombia.</p>
+      </div>
+    </section>
+
+    <!-- ANDROVIX-J -->
+    <section class="section project-section" id="androvix">
+      <div class="container">
+        <article class="project-block reveal">
+          <header class="project-header">
+            <div class="project-header-meta">
+              <span class="project-type" data-i18n="projects.androvix.type">Proyecto colaborativo · E-commerce</span>
+              <h2 class="project-name">ANDROVIX-J</h2>
+            </div>
+            <div class="project-header-actions">
+              <a href="https://0ctapod.github.io/ANDROVIX-J/" target="_blank" rel="noopener" class="btn-primary-custom">
+                <i class="fa-solid fa-up-right-from-square"></i>
+                <span data-i18n="projects.live.btn">Ver Demo</span>
+              </a>
+              <a href="https://github.com/0ctapod/ANDROVIX-J" target="_blank" rel="noopener" class="btn-outline-custom">
+                <i class="fa-brands fa-github"></i>
+                <span data-i18n="projects.repo.btn">Ver Código</span>
+              </a>
+            </div>
+          </header>
+
+          <div class="project-body">
+            <p class="project-desc" data-i18n="projects.androvix.desc">E-commerce con estética cyberpunk/techwear construido como proyecto colaborativo en el bootcamp Generation Colombia. Permite explorar un catálogo de más de 20 productos, gestionar un carrito de compras persistente, crear cuentas y acceder a un panel de administración exclusivo para crear productos.</p>
+
+            <div class="project-grid">
+              <div class="project-info-col">
+                <div class="info-block">
+                  <h4 class="info-label">
+                    <i class="fa-solid fa-user-gear"></i>
+                    <span data-i18n="projects.role.label">Mi rol</span>
+                  </h4>
+                  <p data-i18n="projects.androvix.role">Fui el desarrollador principal de la lógica JavaScript en el proyecto...</p>
+                </div>
+
+                <div class="info-block">
+                  <h4 class="info-label">
+                    <i class="fa-solid fa-mountain"></i>
+                    <span data-i18n="projects.challenge.label">Reto principal</span>
+                  </h4>
+                  <p data-i18n="projects.androvix.challenge">El mayor desafío técnico fue mantener el estado del carrito sincronizado...</p>
+                </div>
+
+                <div class="info-block">
+                  <h4 class="info-label">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span data-i18n="projects.learning.label">Aprendizaje</span>
+                  </h4>
+                  <p data-i18n="projects.androvix.learning">Trabajar en equipo de cuatro personas confirmó...</p>
+                </div>
+              </div>
+
+              <aside class="project-side-col">
+                <div class="stack-block">
+                  <h4 class="info-label">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span data-i18n="projects.stack.label">Stack tecnológico</span>
+                  </h4>
+                  <div class="stack-list">
+                    <span class="tech-chip"><i class="fa-brands fa-html5"></i> HTML5</span>
+                    <span class="tech-chip"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                    <span class="tech-chip"><i class="fa-brands fa-js"></i> JavaScript ES6+</span>
+                    <span class="tech-chip"><i class="fa-brands fa-bootstrap"></i> Bootstrap 5</span>
+                    <span class="tech-chip"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+                    <span class="tech-chip"><i class="fa-solid fa-cube"></i> localStorage</span>
+                  </div>
+                </div>
+
+                <div class="screenshots-block">
+                  <h4 class="info-label">
+                    <i class="fa-solid fa-images"></i>
+                    <span data-i18n="projects.screenshots.label">Capturas</span>
+                  </h4>
+                  <!-- Featured screenshot -->
+                  <a href="#" class="gallery-featured" data-bs-toggle="modal" data-bs-target="#modalAndrovix" data-img="assets/img/androvix/androvix-inicio.jpg" data-caption="Página de inicio — ANDROVIX-J">
+                    <img src="assets/img/androvix/androvix-inicio.jpg" alt="ANDROVIX-J — Página de inicio" class="gallery-img-featured" />
+                    <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                  </a>
+                  <!-- Thumbnail grid -->
+                  <div class="gallery-grid">
+                    <a href="#" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#modalAndrovix" data-img="assets/img/androvix/androvix-catalogo.png" data-caption="Catálogo de productos">
+                      <img src="assets/img/androvix/androvix-catalogo.png" alt="Catálogo de productos" />
+                      <span class="thumb-label">Catálogo</span>
+                    </a>
+                    <a href="#" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#modalAndrovix" data-img="assets/img/androvix/androvix-carrito.png" data-caption="Carrito de compras">
+                      <img src="assets/img/androvix/androvix-carrito.png" alt="Carrito de compras" />
+                      <span class="thumb-label">Carrito</span>
+                    </a>
+                    <a href="#" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#modalAndrovix" data-img="assets/img/androvix/androvix-administrador.png" data-caption="Panel de administración">
+                      <img src="assets/img/androvix/androvix-administrador.png" alt="Panel de administración" />
+                      <span class="thumb-label">Admin</span>
+                    </a>
+                    <a href="#" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#modalAndrovix" data-img="assets/img/androvix/androvix-registro.jpg" data-caption="Registro de usuario">
+                      <img src="assets/img/androvix/androvix-registro.jpg" alt="Registro de usuario" />
+                      <span class="thumb-label">Registro</span>
+                    </a>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Modal lightbox — ANDROVIX-J -->
+    <div class="modal fade gallery-modal" id="modalAndrovix" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="modal-caption" id="captionAndrovix">ANDROVIX-J</span>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img id="modalImgAndrovix" src="" alt="" class="gallery-modal-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AerolineaAPI -->
+    <section class="section project-section alt" id="aerolinea">
+      <div class="container">
+        <article class="project-block reveal">
+          <header class="project-header">
+            <div class="project-header-meta">
+              <span class="project-type" data-i18n="projects.aerolinea.type">Proyecto individual · REST API</span>
+              <h2 class="project-name">AerolineaAPI</h2>
+            </div>
+            <div class="project-header-actions">
+              <a href="https://github.com/0ctapod/TallerAerolineaAPI-octavio" target="_blank" rel="noopener" class="btn-primary-custom">
+                <i class="fa-brands fa-github"></i>
+                <span data-i18n="projects.repo.btn">Ver Código</span>
+              </a>
+            </div>
+          </header>
+
+          <div class="project-body">
+            <p class="project-desc" data-i18n="projects.aerolinea.desc">API REST para gestión de operaciones de una aerolínea, desarrollada individualmente como proyecto del módulo Spring Boot en Generation Colombia. Expone 15 endpoints CRUD para vuelos, pasajeros y reservas, con validación de datos, patrón DTO y documentación interactiva en Swagger UI.</p>
+
+            <div class="project-grid">
+              <div class="project-info-col">
+                <div class="info-block">
+                  <h4 class="info-label">
+                    <i class="fa-solid fa-user-gear"></i>
+                    <span data-i18n="projects.role.label">Mi rol</span>
+                  </h4>
+                  <p data-i18n="projects.aerolinea.role">Proyecto individual — diseñé la arquitectura en capas...</p>
+                </div>
+
+                <div class="info-block">
+                  <h4 class="info-label">
+                    <i class="fa-solid fa-mountain"></i>
+                    <span data-i18n="projects.challenge.label">Reto principal</span>
+                  </h4>
+                  <p data-i18n="projects.aerolinea.challenge">Entender el flujo completo de Spring Boot...</p>
+                </div>
+
+                <div class="info-block">
+                  <h4 class="info-label">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span data-i18n="projects.learning.label">Aprendizaje</span>
+                  </h4>
+                  <p data-i18n="projects.aerolinea.learning">Construir la API desde cero de forma individual...</p>
+                </div>
+              </div>
+
+              <aside class="project-side-col">
+                <div class="stack-block">
+                  <h4 class="info-label">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span data-i18n="projects.stack.label">Stack tecnológico</span>
+                  </h4>
+                  <div class="stack-list">
+                    <span class="tech-chip"><i class="fa-brands fa-java"></i> Java 17</span>
+                    <span class="tech-chip"><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+                    <span class="tech-chip"><i class="fa-solid fa-database"></i> Spring Data JPA</span>
+                    <span class="tech-chip"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+                    <span class="tech-chip"><i class="fa-solid fa-cube"></i> Hibernate</span>
+                    <span class="tech-chip"><i class="fa-solid fa-book"></i> Swagger</span>
+                    <span class="tech-chip"><i class="fa-solid fa-screwdriver-wrench"></i> Maven</span>
+                  </div>
+                </div>
+
+                <div class="endpoints-block">
+                  <h4 class="info-label">
+                    <i class="fa-solid fa-plug"></i>
+                    <span>Endpoints REST</span>
+                  </h4>
+                  <ul class="endpoints-list">
+                    <li><span class="http-method get">GET</span><code>/vuelos</code></li>
+                    <li><span class="http-method post">POST</span><code>/vuelos</code></li>
+                    <li><span class="http-method put">PUT</span><code>/vuelos/{id}</code></li>
+                    <li><span class="http-method del">DEL</span><code>/vuelos/{id}</code></li>
+                    <li><span class="http-method get">GET</span><code>/pasajeros</code></li>
+                    <li><span class="http-method post">POST</span><code>/reservas</code></li>
+                  </ul>
+                </div>
+
+                <div class="screenshots-block">
+                  <h4 class="info-label">
+                    <i class="fa-solid fa-images"></i>
+                    <span data-i18n="projects.screenshots.label">Capturas</span>
+                  </h4>
+                  <!-- Featured Swagger screenshot -->
+                  <a href="#" class="gallery-featured" data-bs-toggle="modal" data-bs-target="#modalAerolinea" data-img="assets/img/aerolinea/swagger-1.png" data-caption="Swagger UI — Vista general de endpoints">
+                    <img src="assets/img/aerolinea/swagger-1.png" alt="Swagger UI — Vista general" class="gallery-img-featured" />
+                    <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                  </a>
+                  <!-- Thumbnail grid -->
+                  <div class="gallery-grid">
+                    <a href="#" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#modalAerolinea" data-img="assets/img/aerolinea/swagger-2.png" data-caption="Swagger UI — GET /vuelos">
+                      <img src="assets/img/aerolinea/swagger-2.png" alt="GET /vuelos" />
+                      <span class="thumb-label">GET vuelos</span>
+                    </a>
+                    <a href="#" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#modalAerolinea" data-img="assets/img/aerolinea/swagger-3.png" data-caption="Swagger UI — POST /vuelos">
+                      <img src="assets/img/aerolinea/swagger-3.png" alt="POST /vuelos" />
+                      <span class="thumb-label">POST vuelos</span>
+                    </a>
+                    <a href="#" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#modalAerolinea" data-img="assets/img/aerolinea/swagger-4.png" data-caption="Swagger UI — Pasajeros">
+                      <img src="assets/img/aerolinea/swagger-4.png" alt="Pasajeros" />
+                      <span class="thumb-label">Pasajeros</span>
+                    </a>
+                    <a href="#" class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#modalAerolinea" data-img="assets/img/aerolinea/swagger-5.png" data-caption="Swagger UI — Reservas">
+                      <img src="assets/img/aerolinea/swagger-5.png" alt="Reservas" />
+                      <span class="thumb-label">Reservas</span>
+                    </a>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <!-- Modal lightbox — AerolineaAPI -->
+  <div class="modal fade gallery-modal" id="modalAerolinea" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-caption" id="captionAerolinea">AerolineaAPI — Swagger UI</span>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img id="modalImgAerolinea" src="" alt="" class="gallery-modal-img" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Gallery lightbox — wires thumbnail clicks to the correct modal image
+    document.addEventListener('DOMContentLoaded', () => {
+      function bindGallery(modalId, imgId, captionId) {
+        const modalEl = document.getElementById(modalId);
+        if (!modalEl) return;
+        modalEl.addEventListener('show.bs.modal', (e) => {
+          const trigger = e.relatedTarget;
+          if (!trigger) return;
+          const src     = trigger.getAttribute('data-img')     || '';
+          const caption = trigger.getAttribute('data-caption') || '';
+          document.getElementById(imgId).src       = src;
+          document.getElementById(imgId).alt       = caption;
+          document.getElementById(captionId).textContent = caption;
+        });
+      }
+      bindGallery('modalAndrovix',  'modalImgAndrovix',  'captionAndrovix');
+      bindGallery('modalAerolinea', 'modalImgAerolinea', 'captionAerolinea');
+    });
+  </script>
+</body>
+</html>

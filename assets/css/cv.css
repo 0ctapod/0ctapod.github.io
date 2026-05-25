@@ -1,0 +1,312 @@
+/* ============================================================
+   CV.CSS — Resume page specific styles
+   ============================================================ */
+
+.page-header {
+  padding: 4rem 0 2rem;
+  border-bottom: 1px solid var(--border-muted);
+  background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-primary) 100%);
+}
+
+.cv-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.block-title {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.block-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 4px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-cyan));
+  border-radius: 2px;
+}
+
+/* ---------- Profile block ---------- */
+.cv-block {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+}
+
+.cv-block p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* ---------- Section backgrounds (alternating) ---------- */
+.cv-profile { background: var(--bg-primary); }
+.cv-education { background: var(--bg-surface); }
+.cv-experience { background: var(--bg-primary); }
+.cv-skills { background: var(--bg-surface); }
+.cv-soft { background: var(--bg-primary); }
+.cv-languages { background: var(--bg-surface); }
+.cv-cert { background: var(--bg-primary); }
+
+/* ---------- Timeline ---------- */
+.timeline {
+  position: relative;
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-item:last-child { margin-bottom: 0; }
+
+.timeline-dot {
+  position: absolute;
+  left: -2rem;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--bg-elevated);
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 0 4px var(--bg-primary);
+}
+
+.timeline-dot.accent {
+  background: var(--accent);
+}
+
+.timeline-content {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.timeline-content:hover {
+  border-color: var(--accent);
+  transform: translateX(4px);
+}
+
+.timeline-date {
+  font-family: var(--font-mono);
+  color: var(--accent);
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.02em;
+}
+
+.timeline-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-place {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+.achievement-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+}
+
+.achievement-list li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.65rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.achievement-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* ---------- Skills ---------- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skill-group {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+}
+
+.skill-group h4 {
+  font-size: 1rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+}
+
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+/* ---------- Soft skills ---------- */
+.soft-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+.soft-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1.25rem;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.soft-item:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.soft-item i {
+  color: var(--accent);
+  font-size: 1.1rem;
+  width: 22px;
+  text-align: center;
+}
+
+/* ---------- Languages ---------- */
+.lang-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.lang-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+}
+
+.lang-flag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.lang-info h4 {
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.lang-verify {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--accent-green);
+}
+
+.lang-verify:hover { color: var(--accent); }
+
+/* ---------- Certifications ---------- */
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+.cert-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.cert-item > i {
+  color: var(--accent);
+  font-size: 1.3rem;
+}
+
+.cert-item > span {
+  flex: 1;
+}
+
+.cert-link {
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+
+.cert-link:hover { color: var(--accent); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .cv-header-row { flex-direction: column; align-items: stretch; }
+  .cv-block { padding: 1.5rem; }
+  .timeline-content { padding: 1rem; }
+}

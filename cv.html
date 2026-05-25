@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hoja de vida de Octavio Franco — Full Stack Java Developer." />
+  <title>CV · Octavio Franco</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/cv.css" />
+</head>
+<body data-page="cv">
+
+  <div id="navbar-container"></div>
+
+  <main>
+    <!-- Page header -->
+    <section class="page-header">
+      <div class="container">
+        <div class="cv-header-row">
+          <div>
+            <h1 class="section-title" data-i18n="cv.title">Hoja de Vida</h1>
+            <p class="section-subtitle" data-i18n="cv.subtitle">Resumen profesional, formación, experiencia y habilidades.</p>
+          </div>
+          <a href="assets/docs/cv-octavio-franco.pdf" class="btn-primary-custom" download>
+            <i class="fa-solid fa-download"></i>
+            <span data-i18n="cv.download">Descargar CV (PDF)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profile -->
+    <section class="section cv-profile">
+      <div class="container">
+        <div class="cv-block reveal">
+          <h2 class="block-title" data-i18n="cv.profile.title">Perfil profesional</h2>
+          <p data-i18n="cv.profile.desc">Desarrollador Full Stack Java Junior con formación en Ingeniería Civil, inglés C2 y experiencia profesional gestionando proyectos, equipos y procesos técnicos...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section cv-education">
+      <div class="container">
+        <h2 class="section-title reveal" data-i18n="cv.education.title">Educación</h2>
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date" data-i18n="cv.education.bootcamp.date">Febrero 2026 — Junio 2026</div>
+              <h3 data-i18n="cv.education.bootcamp.title">Bootcamp en Desarrollo Full Stack Java</h3>
+              <p class="timeline-place" data-i18n="cv.education.bootcamp.place">Generation Colombia</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date" data-i18n="cv.education.civil.date">Febrero 2019 — En curso</div>
+              <h3 data-i18n="cv.education.civil.title">Ingeniería Civil</h3>
+              <p class="timeline-place" data-i18n="cv.education.civil.place">Universidad del Cauca, Popayán, Colombia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section cv-experience">
+      <div class="container">
+        <h2 class="section-title reveal" data-i18n="cv.experience.title">Experiencia laboral</h2>
+        <div class="timeline reveal">
+
+          <div class="timeline-item">
+            <div class="timeline-dot accent"></div>
+            <div class="timeline-content">
+              <div class="timeline-date" data-i18n="cv.experience.funsersoc.date">Mayo 2024 — Septiembre 2024</div>
+              <h3 data-i18n="cv.experience.funsersoc.role">Supervisor de obra</h3>
+              <p class="timeline-place" data-i18n="cv.experience.funsersoc.company">FUNSERSOC, Jamundí, Colombia</p>
+              <ul class="achievement-list">
+                <li data-i18n="cv.experience.funsersoc.b1">Coordiné un equipo multidisciplinario en campo, gestionando cronogramas, asignación de recursos y seguimiento de entregables, con cumplimiento semanal superior al 90%.</li>
+                <li data-i18n="cv.experience.funsersoc.b2">Diagnostiqué y resolví incidencias operativas en tiempo real, priorizando soluciones que minimizaran el impacto en los tiempos de entrega.</li>
+                <li data-i18n="cv.experience.funsersoc.b3">Consolidé reportes de avance y mantuve documentación técnica actualizada por fases, facilitando la trazabilidad y toma de decisiones del equipo.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot accent"></div>
+            <div class="timeline-content">
+              <div class="timeline-date" data-i18n="cv.experience.teacher.date">Enero 2020 — Actualidad</div>
+              <h3 data-i18n="cv.experience.teacher.role">Profesor de Inglés</h3>
+              <p class="timeline-place" data-i18n="cv.experience.teacher.company">Independiente, Popayán, Colombia</p>
+              <ul class="achievement-list">
+                <li data-i18n="cv.experience.teacher.b1">Diseñé e impartí un programa personalizado para un grupo de 6 estudiantes (9–14 años), logrando que alcanzaran nivel B1+ en 18 meses desde niveles iniciales básicos.</li>
+                <li data-i18n="cv.experience.teacher.b2">Adapté contenidos y metodología al perfil de cada estudiante, desarrollando evaluación continua y gestión del progreso individual.</li>
+                <li data-i18n="cv.experience.teacher.b3">Mantuve una permanencia cercana al 80% gestionando de forma autónoma contenidos, programación de sesiones y seguimiento individual.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical skills -->
+    <section class="section cv-skills">
+      <div class="container">
+        <h2 class="section-title reveal" data-i18n="cv.skills.title">Habilidades técnicas</h2>
+        <div class="skills-grid reveal">
+          <div class="skill-group">
+            <h4><i class="fa-solid fa-server"></i> <span data-i18n="cv.skills.backend">Backend</span></h4>
+            <div class="skill-chips">
+              <span class="tech-chip"><i class="fa-brands fa-java"></i> Java 17</span>
+              <span class="tech-chip"><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+              <span class="tech-chip"><i class="fa-solid fa-cube"></i> Spring Data JPA</span>
+              <span class="tech-chip"><i class="fa-solid fa-cube"></i> Hibernate</span>
+              <span class="tech-chip"><i class="fa-solid fa-book"></i> Swagger / OpenAPI</span>
+              <span class="tech-chip"><i class="fa-solid fa-screwdriver-wrench"></i> Maven</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4><i class="fa-solid fa-desktop"></i> <span data-i18n="cv.skills.frontend">Frontend</span></h4>
+            <div class="skill-chips">
+              <span class="tech-chip"><i class="fa-brands fa-html5"></i> HTML5</span>
+              <span class="tech-chip"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+              <span class="tech-chip"><i class="fa-brands fa-js"></i> JavaScript ES6+</span>
+              <span class="tech-chip"><i class="fa-brands fa-bootstrap"></i> Bootstrap 5</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4><i class="fa-solid fa-database"></i> <span data-i18n="cv.skills.db">Base de datos</span></h4>
+            <div class="skill-chips">
+              <span class="tech-chip"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+              <span class="tech-chip"><i class="fa-solid fa-database"></i> SQL</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4><i class="fa-solid fa-toolbox"></i> <span data-i18n="cv.skills.tools">Herramientas</span></h4>
+            <div class="skill-chips">
+              <span class="tech-chip"><i class="fa-brands fa-git-alt"></i> Git</span>
+              <span class="tech-chip"><i class="fa-brands fa-github"></i> GitHub</span>
+              <span class="tech-chip"><i class="fa-solid fa-code"></i> IntelliJ IDEA</span>
+              <span class="tech-chip"><i class="fa-solid fa-code"></i> VS Code</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4><i class="fa-solid fa-people-arrows"></i> <span data-i18n="cv.skills.method">Metodologías</span></h4>
+            <div class="skill-chips">
+              <span class="tech-chip"><i class="fa-solid fa-people-group"></i> Scrum</span>
+              <span class="tech-chip"><i class="fa-solid fa-recycle"></i> Agile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Soft skills -->
+    <section class="section cv-soft">
+      <div class="container">
+        <h2 class="section-title reveal" data-i18n="cv.soft.title">Habilidades blandas</h2>
+        <div class="soft-grid reveal">
+          <div class="soft-item"><i class="fa-solid fa-comments"></i> <span data-i18n="cv.soft.communication">Comunicación efectiva</span></div>
+          <div class="soft-item"><i class="fa-solid fa-users"></i> <span data-i18n="cv.soft.teamwork">Trabajo en equipo</span></div>
+          <div class="soft-item"><i class="fa-solid fa-flag"></i> <span data-i18n="cv.soft.leadership">Liderazgo de equipos</span></div>
+          <div class="soft-item"><i class="fa-solid fa-puzzle-piece"></i> <span data-i18n="cv.soft.problem">Resolución de problemas</span></div>
+          <div class="soft-item"><i class="fa-solid fa-arrows-rotate"></i> <span data-i18n="cv.soft.adapt">Adaptabilidad</span></div>
+          <div class="soft-item"><i class="fa-solid fa-person-running"></i> <span data-i18n="cv.soft.autonomy">Autonomía y autogestión</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="section cv-languages">
+      <div class="container">
+        <h2 class="section-title reveal" data-i18n="cv.languages.title">Idiomas</h2>
+        <div class="lang-grid reveal">
+          <div class="lang-card">
+            <div class="lang-flag">EN</div>
+            <div class="lang-info">
+              <h4 data-i18n="cv.languages.en">Inglés — C2 (EF SET Certificate)</h4>
+              <a href="https://cert.efset.org/EGze3u" target="_blank" rel="noopener" class="lang-verify">
+                <i class="fa-solid fa-circle-check"></i>
+                <span data-i18n="cv.languages.verify">Verificar certificado</span>
+              </a>
+            </div>
+          </div>
+          <div class="lang-card">
+            <div class="lang-flag">ES</div>
+            <div class="lang-info">
+              <h4 data-i18n="cv.languages.es">Español — Nativo</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section cv-cert">
+      <div class="container">
+        <h2 class="section-title reveal" data-i18n="cv.cert.title">Certificaciones y logros</h2>
+        <div class="cert-list reveal">
+          <div class="cert-item">
+            <i class="fa-solid fa-certificate"></i>
+            <span data-i18n="cv.cert.efset">Certificado EF SET — Nivel C2 en inglés</span>
+            <a href="https://cert.efset.org/EGze3u" target="_blank" rel="noopener" class="cert-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+          <div class="cert-item">
+            <i class="fa-solid fa-award"></i>
+            <span data-i18n="cv.cert.generation">Bootcamp Full Stack Java — Generation Colombia (en curso)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
