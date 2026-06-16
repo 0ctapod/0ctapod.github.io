@@ -130,6 +130,33 @@ p {
   max-width: 600px;
 }
 
+/* ---------- Page header (inner pages) ---------- */
+.page-header {
+  padding: 4rem 0 2rem;
+  border-bottom: 1px solid var(--border-muted);
+  background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-primary) 100%);
+}
+
+/* ---------- Block title (accent-bar variant) ---------- */
+.block-title {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.block-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 4px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-cyan));
+  border-radius: 2px;
+}
+
 /* ---------- Buttons ---------- */
 .btn-primary-custom {
   background: var(--accent);

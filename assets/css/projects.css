@@ -2,12 +2,6 @@
    PROJECTS.CSS — Portfolio page specific styles
    ============================================================ */
 
-.page-header {
-  padding: 4rem 0 2rem;
-  border-bottom: 1px solid var(--border-muted);
-  background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-primary) 100%);
-}
-
 .project-section { background: var(--bg-primary); }
 .project-section.alt { background: var(--bg-surface); }
 
@@ -230,7 +224,7 @@
   transition: opacity 0.25s ease;
   color: #fff;
   font-size: 1.6rem;
-  background: rgba(88, 166, 255, 0.12);
+  background: rgba(167, 139, 250, 0.12);
 }
 
 .gallery-featured:hover .gallery-zoom {

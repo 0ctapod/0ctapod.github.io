@@ -82,6 +82,7 @@ const translations = {
     'projects.video.btn': 'Ver Video',
     'projects.screenshots.label': 'Capturas',
     'projects.screenshots.placeholder': 'Capturas de pantalla por integrar',
+    'projects.endpoints.label': 'Endpoints REST',
 
     // ANDROVIX-J
     'projects.featured': 'Proyecto Destacado',
@@ -245,6 +246,7 @@ const translations = {
     'projects.video.btn': 'Watch Video',
     'projects.screenshots.label': 'Screenshots',
     'projects.screenshots.placeholder': 'Screenshots to be added soon',
+    'projects.endpoints.label': 'REST Endpoints',
 
     // ANDROVIX-J
     'projects.featured': 'Featured Project',
