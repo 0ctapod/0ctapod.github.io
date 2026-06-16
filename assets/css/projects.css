@@ -54,11 +54,6 @@
   color: var(--accent-cyan);
 }
 
-/* ---------- Backend tech chips ---------- */
-.tech-chip--backend {
-  border-color: rgba(167, 139, 250, 0.4);
-  color: var(--accent);
-}
 
 /* ---------- Project header ---------- */
 .project-header {
