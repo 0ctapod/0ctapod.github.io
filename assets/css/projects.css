@@ -27,8 +27,37 @@
   right: -100px;
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(88, 166, 255, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(167, 139, 250, 0.08) 0%, transparent 70%);
   pointer-events: none;
+}
+
+/* ---------- Featured badge ---------- */
+.project-featured-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(135deg, var(--accent-soft), var(--accent-cyan-soft));
+  border: 1px solid var(--accent);
+  border-radius: 20px;
+  padding: 0.25rem 0.8rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.55rem;
+}
+
+.project-featured-badge i {
+  font-size: 0.65rem;
+  color: var(--accent-cyan);
+}
+
+/* ---------- Backend tech chips ---------- */
+.tech-chip--backend {
+  border-color: rgba(167, 139, 250, 0.4);
+  color: var(--accent);
 }
 
 /* ---------- Project header ---------- */

@@ -117,16 +117,17 @@
         <h2 class="section-title reveal" data-i18n="home.feature.title">Proyecto destacado</h2>
         <div class="featured-card reveal">
           <div class="featured-meta">
-            <span class="featured-tag" data-i18n="home.feature.label">Más reciente</span>
-            <h3>AerolineaAPI</h3>
-            <p data-i18n="home.feature.desc">API REST para gestión de vuelos, pasajeros y reservas. Arquitectura en capas con Spring Boot, validación de datos y documentación con Swagger UI.</p>
+            <span class="featured-tag" data-i18n="home.feature.label">Proyecto Destacado</span>
+            <h3>ANDROVIX-J</h3>
+            <p data-i18n="home.feature.desc">E-commerce full stack con autenticación JWT por roles, carrito con checkout real contra una API REST en Spring Boot, panel de administración CRUD y deploy completo en GitHub Pages + Render.</p>
             <div class="featured-stack">
               <span class="tech-chip"><i class="fa-brands fa-java"></i> Java 17</span>
               <span class="tech-chip"><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+              <span class="tech-chip"><i class="fa-solid fa-key"></i> JWT</span>
               <span class="tech-chip"><i class="fa-solid fa-database"></i> PostgreSQL</span>
-              <span class="tech-chip"><i class="fa-solid fa-book"></i> Swagger</span>
+              <span class="tech-chip"><i class="fa-brands fa-js"></i> JavaScript</span>
             </div>
-            <a href="projects.html#aerolinea" class="btn-primary-custom mt-3">
+            <a href="projects.html#androvix" class="btn-primary-custom mt-3">
               <span data-i18n="home.feature.cta">Ver detalles</span>
               <i class="fa-solid fa-arrow-right"></i>
             </a>
@@ -137,22 +138,18 @@
                 <span class="dot red"></span>
                 <span class="dot yellow"></span>
                 <span class="dot green"></span>
-                <span class="code-filename">ReservaController.java</span>
+                <span class="code-filename">AuthController.java</span>
               </div>
-              <pre class="code-body"><code><span class="code-comment">// REST endpoint for creating reservations</span>
+              <pre class="code-body"><code><span class="code-comment">// JWT — role-based authentication</span>
 <span class="code-keyword">@RestController</span>
-<span class="code-keyword">@RequestMapping</span>(<span class="code-string">"/reservas"</span>)
-<span class="code-keyword">public class</span> <span class="code-class">ReservaController</span> {
+<span class="code-keyword">@RequestMapping</span>(<span class="code-string">"/auth"</span>)
+<span class="code-keyword">public class</span> <span class="code-class">AuthController</span> {
 
-    <span class="code-keyword">@Autowired</span>
-    <span class="code-keyword">private</span> <span class="code-class">ReservaService</span> service;
-
-    <span class="code-keyword">@PostMapping</span>
-    <span class="code-keyword">public</span> <span class="code-class">ResponseEntity</span>&lt;<span class="code-class">ReservaResponseDTO</span>&gt;
-    crear(<span class="code-keyword">@Valid @RequestBody</span> <span class="code-class">ReservaRequestDTO</span> dto) {
+    <span class="code-keyword">@PostMapping</span>(<span class="code-string">"/login"</span>)
+    <span class="code-keyword">public</span> <span class="code-class">ResponseEntity</span>&lt;<span class="code-class">AuthResponseDTO</span>&gt;
+    login(<span class="code-keyword">@RequestBody</span> <span class="code-class">LoginRequestDTO</span> dto) {
         <span class="code-keyword">return</span> <span class="code-class">ResponseEntity</span>
-            .status(<span class="code-class">HttpStatus</span>.CREATED)
-            .body(service.crear(dto));
+            .ok(authService.login(dto));
     }
 }</code></pre>
             </div>

@@ -34,8 +34,8 @@ const translations = {
     'home.highlights.english.title': 'Inglés C2 certificado',
     'home.highlights.english.desc': 'Comunicación fluida con equipos internacionales y documentación técnica sin barreras de idioma — certificado por EF SET.',
     'home.feature.title': 'Proyecto destacado',
-    'home.feature.label': 'Más reciente',
-    'home.feature.desc': 'API REST para gestión de vuelos, pasajeros y reservas. Arquitectura en capas con Spring Boot, validación de datos y documentación con Swagger UI.',
+    'home.feature.label': 'Proyecto Destacado',
+    'home.feature.desc': 'E-commerce full stack con autenticación JWT por roles, carrito con checkout real contra una API REST en Spring Boot, panel de administración CRUD y deploy completo en GitHub Pages + Render.',
     'home.feature.cta': 'Ver detalles',
 
     // ABOUT page
@@ -73,14 +73,16 @@ const translations = {
     'projects.challenge.label': 'Reto principal',
     'projects.learning.label': 'Aprendizaje',
     'projects.live.btn': 'Ver Demo',
+    'projects.swagger.btn': 'Ver API Docs',
     'projects.repo.btn': 'Ver Código',
     'projects.video.btn': 'Ver Video',
     'projects.screenshots.label': 'Capturas',
     'projects.screenshots.placeholder': 'Capturas de pantalla por integrar',
 
     // ANDROVIX-J
-    'projects.androvix.type': 'Proyecto colaborativo · E-commerce',
-    'projects.androvix.desc': 'E-commerce con estética cyberpunk/techwear construido como proyecto colaborativo en el bootcamp Generation Colombia. Permite explorar un catálogo de más de 20 productos, gestionar un carrito de compras persistente, crear cuentas y acceder a un panel de administración exclusivo para crear productos.',
+    'projects.featured': 'Proyecto Destacado',
+    'projects.androvix.type': 'Proyecto colaborativo · Full Stack E-commerce',
+    'projects.androvix.desc': 'E-commerce full stack con estética cyberpunk/techwear desarrollado en equipo durante el bootcamp Generation Colombia. Integra un backend Java con Spring Boot y autenticación JWT por roles (ADMIN/CLIENTE), catálogo dinámico con filtros por categoría, carrito persistente con checkout real contra la API REST, panel de administración CRUD completo y página de cuenta personal con historial de pedidos.',
     'projects.androvix.role': 'Fui el desarrollador principal de la lógica JavaScript en el proyecto. Implementé el sistema de renderizado dinámico del catálogo con filtros por URL, la gestión completa del carrito (agregar, eliminar, actualizar cantidades, persistencia en localStorage y actualización del badge en la navbar), el flujo de autenticación con validaciones en tiempo real, redirección por rol y manejo de sesión con sessionStorage, y el CRUD del panel de administración. También contribuí a HTML y CSS en múltiples vistas.',
     'projects.androvix.challenge': 'El mayor desafío técnico fue mantener el estado del carrito sincronizado entre páginas cuando la navbar se carga de forma dinámica vía fetch(). Actualizar el badge contador en tiempo real requería ejecutar la lógica después de que el componente terminara de inyectarse en el DOM. Coordiné además el trabajo del equipo estableciendo acuerdos tempranos sobre la estructura de carpetas y convenciones de nomenclatura, lo que redujo conflictos al integrar código de los cuatro integrantes.',
     'projects.androvix.learning': 'Trabajar en equipo de cuatro personas confirmó que los acuerdos previos sobre arquitectura del código son tan importantes como el código mismo. Aprendí que la comunicación proactiva y la responsabilidad individual sobre módulos específicos son la base para cumplir entregas en entornos colaborativos.',
@@ -191,8 +193,8 @@ const translations = {
     'home.highlights.english.title': 'C2 certified English',
     'home.highlights.english.desc': 'Fluent communication with international teams and technical documentation without language barriers — certified by EF SET.',
     'home.feature.title': 'Featured project',
-    'home.feature.label': 'Most recent',
-    'home.feature.desc': 'REST API for managing flights, passengers, and reservations. Layered architecture with Spring Boot, data validation, and Swagger UI documentation.',
+    'home.feature.label': 'Featured Project',
+    'home.feature.desc': 'Full stack e-commerce with role-based JWT authentication, a persistent cart with real checkout against a Spring Boot REST API, a full CRUD admin panel, and full deploy on GitHub Pages + Render.',
     'home.feature.cta': 'View details',
 
     // ABOUT page
@@ -230,14 +232,16 @@ const translations = {
     'projects.challenge.label': 'Main challenge',
     'projects.learning.label': 'Key learning',
     'projects.live.btn': 'Live Demo',
+    'projects.swagger.btn': 'View API Docs',
     'projects.repo.btn': 'View Code',
     'projects.video.btn': 'Watch Video',
     'projects.screenshots.label': 'Screenshots',
     'projects.screenshots.placeholder': 'Screenshots to be added soon',
 
     // ANDROVIX-J
-    'projects.androvix.type': 'Team project · E-commerce',
-    'projects.androvix.desc': 'Cyberpunk/techwear e-commerce built as a collaborative project during the Generation Colombia bootcamp. Users can browse a 20+ product catalog, manage a persistent shopping cart, register accounts, and access an admin panel exclusive to creating products.',
+    'projects.featured': 'Featured Project',
+    'projects.androvix.type': 'Team project · Full Stack E-commerce',
+    'projects.androvix.desc': 'Full stack cyberpunk/techwear e-commerce built as a collaborative project during the Generation Colombia bootcamp. Features a Java backend with Spring Boot and role-based JWT authentication (ADMIN/CLIENT), a dynamic product catalog with category filters, a persistent cart with real checkout against the REST API, a full CRUD admin panel, and a personal account page with order history.',
     'projects.androvix.role': "I was the lead JavaScript developer on the project. I implemented the dynamic catalog rendering with URL-based filtering, the full cart management system (add, remove, update quantities, localStorage persistence, and navbar badge updates), the authentication flow with real-time validation, role-based redirect and session handling via sessionStorage, and the admin panel's product CRUD. I also contributed to HTML and CSS across multiple views.",
     'projects.androvix.challenge': 'The biggest technical challenge was keeping cart state synchronized across pages while the navbar loads dynamically via fetch(). Updating the badge counter in real time required running the logic only after the component finished injecting into the DOM. I also coordinated the team by establishing early agreements on folder structure and naming conventions, which reduced conflicts when integrating code from all four contributors.',
     'projects.androvix.learning': 'Working in a four-person team confirmed that upfront agreements on code architecture are as important as the code itself. I learned that proactive communication and individual ownership of specific modules are the foundation for meeting deliverables in collaborative environments.',
