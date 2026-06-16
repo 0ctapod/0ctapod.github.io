@@ -33,31 +33,61 @@
       <div class="hero-bg-img"></div>
       <div class="hero-bg-grid"></div>
       <div class="hero-bg-glow"></div>
-      <div class="container hero-content">
-        <p class="hero-greeting fade-in" data-i18n="home.greeting">Hola, soy</p>
-        <h1 class="hero-name fade-in fade-in-delay-1">
-          Octavio <span class="accent">Franco</span>
-        </h1>
-        <p class="hero-role fade-in fade-in-delay-2" data-i18n="home.role">Desarrollador Full Stack Java</p>
-        <p class="hero-tagline fade-in fade-in-delay-3" data-i18n="home.tagline">
-          Construyo aplicaciones web completas — desde APIs REST hasta interfaces responsivas — con Java, Spring Boot y JavaScript.
-        </p>
-
-        <div class="hero-cta fade-in fade-in-delay-3">
-          <a href="projects.html" class="btn-primary-custom">
-            <span data-i18n="home.cta.projects">Ver Proyectos</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-          <a href="assets/docs/cv-octavio-franco.pdf" class="btn-outline-custom" download>
-            <i class="fa-solid fa-download"></i>
-            <span data-i18n="home.cta.cv">Descargar CV</span>
-          </a>
+      <div class="container hero-grid">
+        <!-- Text column -->
+        <div class="hero-text">
+          <p class="hero-greeting fade-in" data-i18n="home.greeting">Hola, soy</p>
+          <h1 class="hero-name fade-in fade-in-delay-1">
+            Octavio <span class="accent">Franco</span>
+          </h1>
+          <p class="hero-role fade-in fade-in-delay-2" data-i18n="home.role">Desarrollador Full Stack Java</p>
+          <p class="hero-tagline fade-in fade-in-delay-3" data-i18n="home.tagline">
+            Construyo aplicaciones web completas — desde APIs REST hasta interfaces responsivas — con Java, Spring Boot y JavaScript.
+          </p>
+          <div class="hero-cta fade-in fade-in-delay-3">
+            <a href="projects.html" class="btn-primary-custom">
+              <span data-i18n="home.cta.projects">Ver Proyectos</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="assets/docs/cv-octavio-franco.pdf" class="btn-outline-custom" download>
+              <i class="fa-solid fa-download"></i>
+              <span data-i18n="home.cta.cv">Descargar CV</span>
+            </a>
+          </div>
+          <div class="hero-social fade-in fade-in-delay-3">
+            <a href="https://github.com/0ctapod" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/octavio-franco-6341483b8/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:octaviofranco.dev@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
         </div>
 
-        <div class="hero-social fade-in fade-in-delay-3">
-          <a href="https://github.com/0ctapod" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/octavio-franco-6341483b8/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="mailto:octaviofranco.dev@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <!-- Profile card column -->
+        <div class="hero-card-col fade-in fade-in-delay-1">
+          <div class="hero-profile-card">
+            <div class="hero-avatar-wrap">
+              <img src="assets/img/profile/avatar.png" alt="Octavio Franco" class="hero-avatar" />
+            </div>
+            <h3 class="hero-card-name">Octavio Franco</h3>
+            <p class="hero-card-role" data-i18n="home.role">Desarrollador Full Stack Java</p>
+            <div class="hero-available-badge">
+              <span class="available-dot"></span>
+              <span data-i18n="home.hero.available">En búsqueda activa</span>
+            </div>
+            <div class="hero-card-info">
+              <div class="hero-card-info-row">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Cali, Colombia</span>
+              </div>
+              <div class="hero-card-info-row">
+                <i class="fa-solid fa-language"></i>
+                <span data-i18n="home.hero.langs">ES nativo · EN C2</span>
+              </div>
+              <div class="hero-card-info-row">
+                <i class="fa-solid fa-circle-check"></i>
+                <span data-i18n="home.hero.modality">Remota · Híbrida · Reubicación</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
