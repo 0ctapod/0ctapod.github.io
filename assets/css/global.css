@@ -286,6 +286,16 @@ p {
   color: var(--accent);
 }
 
+.brand-mark {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.4s ease;
+}
+
+.navbar-brand-custom:hover .brand-mark {
+  transform: rotate(45deg);
+}
+
 .navbar-brand-custom .brand-bracket {
   color: var(--accent);
 }
@@ -380,6 +390,17 @@ p {
 .footer-brand h4 {
   margin-bottom: 0.5rem;
   color: var(--text-primary);
+}
+
+.footer-brand-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-brand-mark {
+  width: 26px;
+  height: 26px;
 }
 
 .footer-brand p {
