@@ -53,6 +53,19 @@
   filter: blur(50px);
 }
 
+.hero-bg-mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 540px;
+  height: 540px;
+  background: url('../img/octapod-mark.svg') center / contain no-repeat;
+  opacity: 0.045;
+  pointer-events: none;
+  z-index: 0;
+}
+
 .hero-grid {
   position: relative;
   z-index: 2;

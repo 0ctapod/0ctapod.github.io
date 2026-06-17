@@ -296,6 +296,29 @@ p {
   transform: rotate(45deg);
 }
 
+/* Entrance: tentacles draw in radially, nodes then core appear */
+@keyframes octoDraw { from { stroke-dashoffset: 26; } to { stroke-dashoffset: 0; } }
+@keyframes octoFade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes octoPop  { from { opacity: 0; transform: scale(0); } to { opacity: 1; transform: scale(1); } }
+
+.brand-mark .octo-t { stroke-dasharray: 26; animation: octoDraw 0.5s ease both; }
+.brand-mark g:nth-of-type(1) .octo-t { animation-delay: 0s; }
+.brand-mark g:nth-of-type(2) .octo-t { animation-delay: 0.05s; }
+.brand-mark g:nth-of-type(3) .octo-t { animation-delay: 0.1s; }
+.brand-mark g:nth-of-type(4) .octo-t { animation-delay: 0.15s; }
+.brand-mark g:nth-of-type(5) .octo-t { animation-delay: 0.2s; }
+.brand-mark g:nth-of-type(6) .octo-t { animation-delay: 0.25s; }
+.brand-mark g:nth-of-type(7) .octo-t { animation-delay: 0.3s; }
+.brand-mark g:nth-of-type(8) .octo-t { animation-delay: 0.35s; }
+.brand-mark .octo-n { animation: octoFade 0.3s ease 0.45s both; }
+.brand-mark .octo-core { transform-box: fill-box; transform-origin: center; animation: octoPop 0.4s ease 0.6s both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-mark .octo-t,
+  .brand-mark .octo-n,
+  .brand-mark .octo-core { animation: none; }
+}
+
 .navbar-brand-custom .brand-bracket {
   color: var(--accent);
 }
